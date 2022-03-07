@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Twitter search query here" />
+
+
+
+        <GridLayout
+            android:id="@+id/grLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="2"
+            android:rowCount="1"
+            tools:context=".MainActivity">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:hint="Tag your query"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="Save" />
+        </GridLayout>
+
+
+        <ScrollView
+            android:background="#FFFF00"
+            android:layout_width="510dp"
+            android:layout_height="757dp"
+            android:layout_below="@+id/grLayout1"
+            android:layout_marginTop="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tagged Searches"
+                    android:textSize="26dp" />
+
+                <GridLayout
+                    android:id="@+id/grLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name1"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name3"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name4"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name5"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name6"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name7"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name8"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name9"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name10"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name11"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name12"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button12"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name13"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button13"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grLayout14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:columnCount="2"
+                    android:paddingHorizontal="10dp"
+                    android:rowCount="1"
+
+                    tools:context=".MainActivity">
+
+
+                    <Button
+                        android:id="@+id/name14"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_columnWeight="1"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPersonName"
+                        android:text="AndroidFP" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_height="wrap_content"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:text="Edit" />
+                </GridLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1057dp"
+            android:text="Clear tags" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
