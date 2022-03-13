@@ -6,6 +6,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -17,11 +18,20 @@ import com.java.myapplication.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Scanner;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+
+    private HashMap<String, String> dictionary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +53,16 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+dictionary = new HashMap<>();
+
+        Scanner scan = new Scanner(getResources().openRawResource(R.raw.grewords));
+        while (scan.hasNextLine()){
+            String line = scan.nextLine();
+            String[] pieces = line.split("-");
+          dictionary.put(pieces[0],pieces[1]);
+
+        }
+
     }
 
     @Override
@@ -73,4 +93,35 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public  void lookup(View view){
+        EditText the_word = (EditText)  findViewById(R.id.the_word);
+        String word = the_word.getText().toString();
+
+        String defn = dictionary.get(word);
+        TextView definition = (TextView) findViewById(R.id.definiton);
+
+        if(defn!=null){
+            definition.setText(defn);
+
+        }
+        else{
+            definition.setText("Not found!");
+        }
+
+    }
+
+
+    public void addNew(View view){
+        EditText new_word = (EditText)  findViewById(R.id.new_word);
+        String word = new_word.getText().toString();
+        String [] pieces = word.split("-");
+        dictionary.put(pieces[0],pieces[1]);
+        Toast toast = Toast.makeText(this,"New word added to dictionary!",Toast.LENGTH_SHORT);
+        toast.show();
+
+        new_word.setText("");
+    }
+
+
 }

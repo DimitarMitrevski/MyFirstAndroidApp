@@ -15,10 +15,11 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/definiton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Twitter search query here" />
+            android:hint="Definiton will appear here"
+             />
 
 
 
@@ -32,12 +33,12 @@
             tools:context=".MainActivity">
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/the_word"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="0"
                 android:layout_columnWeight="1"
-                android:hint="Tag your query"
+                android:hint="Enter a word to translate"
                 android:inputType="textPersonName" />
 
             <Button
@@ -45,16 +46,45 @@
                 android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="1"
-                android:text="Save" />
+                android:text="Search"
+                android:onClick="lookup"
+                />
         </GridLayout>
 
+        <GridLayout
+            android:id="@+id/grLayoutTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:columnCount="2"
+            android:rowCount="1"
+            tools:context=".MainActivity">
+
+            <EditText
+                android:id="@+id/new_word"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:hint="Add new word"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/add_new"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="Add"
+                android:onClick="addNew"
+                />
+        </GridLayout>
 
         <ScrollView
             android:background="#FFFF00"
             android:layout_width="510dp"
-            android:layout_height="757dp"
+            android:layout_height="727dp"
             android:layout_below="@+id/grLayout1"
-            android:layout_marginTop="0dp">
+            android:layout_marginTop="60dp">
 
 
             <LinearLayout
@@ -68,7 +98,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Tagged Searches"
+                    android:text="Words"
                     android:textSize="26dp" />
 
                 <GridLayout
@@ -91,7 +121,7 @@
                         android:layout_columnWeight="1"
                         android:layout_marginRight="10dp"
                         android:inputType="textPersonName"
-                        android:text="AndroidFP" />
+                        android:text="jadi" />
 
                     <Button
                         android:id="@+id/button1"
@@ -121,7 +151,7 @@
                         android:layout_columnWeight="1"
                         android:layout_marginRight="10dp"
                         android:inputType="textPersonName"
-                        android:text="AndroidFP" />
+                        android:text="ime" />
 
                     <Button
                         android:id="@+id/button3"
@@ -151,7 +181,7 @@
                         android:layout_columnWeight="1"
                         android:layout_marginRight="10dp"
                         android:inputType="textPersonName"
-                        android:text="AndroidFP" />
+                        android:text="pie" />
 
                     <Button
                         android:id="@+id/button4"
@@ -181,7 +211,7 @@
                         android:layout_columnWeight="1"
                         android:layout_marginRight="10dp"
                         android:inputType="textPersonName"
-                        android:text="AndroidFP" />
+                        android:text="spie" />
 
                     <Button
                         android:id="@+id/button5"

@@ -1,0 +1,4 @@
+jadi-eat
+ime-name
+pie-drink
+spie-sleep

@@ -6,10 +6,12 @@
         <entry key="..\:/Users/Dimitar/AndroidStudioProjects/MyApplicationFIKT/app/src/main/res/layout/activity_main.xml" value="0.20896656534954408" />
         <entry key="..\:/Users/Dimitar/AndroidStudioProjects/MyApplicationFIKT/app/src/main/res/layout/content_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/Dimitar/AndroidStudioProjects/MyApplicationFIKT/app/src/main/res/layout/fragment_first.xml" value="0.16132368148914167" />
+        <entry key="..\:/Users/gosti/Desktop/MyFirstAndroidApp/app/src/main/res/layout/activity_main.xml" value="0.2871376811594203" />
+        <entry key="..\:/Users/gosti/Desktop/MyFirstAndroidApp/app/src/main/res/layout/fragment_first.xml" value="0.21467391304347827" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
